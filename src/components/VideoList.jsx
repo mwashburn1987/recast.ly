@@ -1,6 +1,8 @@
-var VideoList = () => (
+import VideoListEntry from './VideoListEntry.js';
+
+var VideoList = (props) => (
   <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    <div><h5><em>videoListEntry</em><VideoListEntry currentVideo={props.videoItems}/></h5></div>
     <div><h5><em>videoListEntry</em> view goes here</h5></div>
     <div><h5><em>videoListEntry</em> view goes here</h5></div>
     <div><h5><em>videoListEntry</em> view goes here</h5></div>
